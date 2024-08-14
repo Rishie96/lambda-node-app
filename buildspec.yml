@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm run build # if you have a build process
+      - zip -r application.zip .
+artifacts:
+  files:
+    - function.zip
